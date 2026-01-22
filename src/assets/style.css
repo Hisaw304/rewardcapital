@@ -15,6 +15,7 @@
 }
 body {
   background: var(--background);
+  overflow-x: hidden;
 }
 /* underline animation */
 .nav-link {
@@ -4138,41 +4139,54 @@ body {
   left: 24px;
   bottom: 24px;
   z-index: 9999;
-  background: var(--background-b);
+  background: linear-gradient(145deg, var(--background-b), var(--background));
   color: var(--white80);
-  padding: 12px 16px;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  padding: 14px 18px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
   font-size: 13px;
-  max-width: 260px; /* desktop max width */
+  max-width: 260px;
   opacity: 0;
   transform: translateY(20px);
   animation: popupShow 0.5s ease forwards;
   border-left: 4px solid var(--primary-1);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   word-break: break-word;
 }
 
+/* Hide animation */
 .activity-popup.hide {
   animation: popupHide 0.5s ease forwards;
 }
 
+/* Top - "Someone from ..." */
 .activity-title {
-  font-weight: 600;
-  line-height: 1.3;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 1rem;
   color: var(--white80);
 }
 
+/* Middle - "recently deposited/withdrew" */
+.activity-transaction {
+  font-weight: 500;
+  font-size: 0.93rem;
+  color: var(--primary-1);
+}
+
+/* Bottom - time + verified */
 .activity-subtitle {
   font-size: 11px;
   color: var(--white70);
-  margin-top: 3px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 5px;
 }
 
+/* Verified check */
 .activity-verified {
   color: #22c55e;
   font-size: 12px;
@@ -4218,7 +4232,7 @@ body {
     font-size: 11px;
     left: 12px;
     bottom: 16px;
-    padding: 10px 12px;
-    border-radius: 14px;
+    padding: 12px 14px;
+    border-radius: 16px;
   }
 }

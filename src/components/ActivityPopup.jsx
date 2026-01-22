@@ -51,35 +51,48 @@ const generateMessage = () => {
       : randomAmount(5000, 75000);
 
   return {
-    title: `${country.flag} Someone from ${country.name} recently ${type} $${amount}`,
-    subtitle: `${randomTimeAgo()} · Verified by Blockchain`,
+    countryLine: `${country.flag} Someone from ${country.name}`,
+    transactionLine: `recently ${type} $${amount}`,
+    timeLine: `${randomTimeAgo()} · Verified by Blockchain`,
   };
 };
 
 export default function ActivityPopup() {
   const [activity, setActivity] = useState(generateMessage());
   const [hide, setHide] = useState(false);
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setHide(true);
+    let interval;
+    const firstDelay = 8000; // 8 seconds delay before first popup
+    const rotation = 7000; // 7 seconds between messages (natural)
 
-      setTimeout(() => {
-        setActivity(generateMessage());
-        setHide(false);
-      }, 600); // match hide animation
-    }, 5000);
+    // Show first message after delay
+    const timeout = setTimeout(() => {
+      setActivity(generateMessage());
 
-    return () => clearInterval(interval);
+      // Start repeating rotation
+      interval = setInterval(() => {
+        setHide(true); // trigger hide animation
+
+        setTimeout(() => {
+          setActivity(generateMessage());
+          setHide(false); // show next toast
+        }, 600); // match hide animation duration
+      }, rotation);
+    }, firstDelay);
+
+    return () => {
+      clearTimeout(timeout);
+      clearInterval(interval);
+    };
   }, []);
 
   return (
     <div className={`activity-popup ${hide ? "hide" : ""}`}>
-      <div className="activity-title">{activity.title}</div>
-
+      <div className="activity-title">{activity.countryLine}</div>
+      <div className="activity-transaction">{activity.transactionLine}</div>
       <div className="activity-subtitle">
-        <span>{activity.subtitle}</span>
-        <FiCheckCircle className="activity-verified" size={14} />
+        <span>{activity.timeLine}</span>
+        <FiCheckCircle className="activity-verified" />
       </div>
     </div>
   );

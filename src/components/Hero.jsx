@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import heroBg from "../assets/hero.jpg";
-import heroSide from "../assets/hero-side.png"; // your right-side image
-
+import heroSide from "../assets/hero-side.png";
 const Hero = () => {
   return (
     <section

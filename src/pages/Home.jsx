@@ -9,10 +9,12 @@ import TokenMetrics from "../components/TokenMetrics";
 import Team from "../components/Team";
 import Faq from "../components/Faq";
 import Roadmap from "../components/Roadmap";
+import ActivityPopup from "../components/ActivityPopup";
 
 const Home = () => {
   return (
     <div>
+      <ActivityPopup />
       <Hero />
       <Features />
       <Ecosystem />

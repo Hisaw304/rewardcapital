@@ -1,6 +1,5 @@
 // src/components/WhatIsNFT.jsx
 import React from "react";
-
 import earth from "../assets/Earth-network.jpg";
 import cam2 from "../assets/cam2.png";
 import cam3 from "../assets/cam3.png";

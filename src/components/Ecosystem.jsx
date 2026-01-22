@@ -18,7 +18,7 @@ const stats = [
 const Ecosystem = () => {
   return (
     <section className="ecosystem-section">
-      <div className="max-w-7xl ecosystem-container">
+      <div className="max-w-7xl mx-auto ecosystem-container">
         {/* LEFT CONTENT */}
         <div className="ecosystem-left slide-in-left">
           <h2>

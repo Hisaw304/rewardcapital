@@ -1,8 +1,8 @@
 // src/components/WhatIsNFT.jsx
 import React from "react";
 import earth from "../assets/Earth-network.jpg";
-import cam2 from "../assets/cam2.png";
-import cam3 from "../assets/cam3.png";
+import cam2 from "../assets/Cam2.png";
+import cam3 from "../assets/Cam3.png";
 import image1 from "../assets/img-1.png";
 
 const WhatIsNFT = () => {

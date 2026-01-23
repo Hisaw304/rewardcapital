@@ -10,6 +10,7 @@ import Team from "../components/Team";
 import Faq from "../components/Faq";
 import Roadmap from "../components/Roadmap";
 import ActivityPopup from "../components/ActivityPopup";
+import RewardCapital from "../components/RewardCapital";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <ActivityPopup />
       <Hero />
       <Features />
+      <RewardCapital />
       <Ecosystem />
       <HowToStart />
       <Markets />

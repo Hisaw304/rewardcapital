@@ -4256,3 +4256,74 @@ body {
     border-radius: 16px;
   }
 }
+/* ================= REWARD CAPITAL ANIMATIONS ================= */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseSlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.25;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.8s ease forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 6s ease-in-out infinite;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}
+
+/* Reward Capital Section */
+.reward-capital {
+  background: var(--background-b);
+  color: var(--white80);
+}
+
+.reward-capital h2,
+.reward-capital h3 {
+  color: white;
+}
+
+.reward-capital p {
+  color: var(--white70);
+}
+
+.reward-capital a {
+  text-decoration: none;
+}

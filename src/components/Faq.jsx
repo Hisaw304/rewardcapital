@@ -4,7 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 const EMAIL = "[email protected]";
-const TELEGRAM_LINK = "https://t.me/rewardcapital";
+const TELEGRAM_LINK = "https://t.me/+MvGEyx7b39tiM2I5";
 
 const faqData = [
   {

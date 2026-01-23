@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 import { getWalletByPublicId } from "../data/wallets";
 import {
@@ -133,10 +133,10 @@ const CoinView = () => {
 
       {/* ACTIONS */}
       <div className="coin-actions">
-        <Action icon={<FiSend />} label="Send" />
-        <Action icon={<FiDownload />} label="Receive" />
-        <Action icon={<FiCreditCard />} label="Buy" />
-        <Action icon={<FiRepeat />} label="Swap" />
+        <Action icon={<FiSend />} label="Send" href="/send" />
+        <Action icon={<FiDownload />} label="Receive" href="/receive" />
+        <Action icon={<FiCreditCard />} label="Buy" href="/buy" />
+        <Action icon={<FiRepeat />} label="Swap" href="/swap" />
       </div>
 
       {/* TRANSACTIONS */}
@@ -158,11 +158,11 @@ const CoinView = () => {
 
 /* ---------------- SUB COMPONENTS ---------------- */
 
-const Action = ({ icon, label }) => (
-  <div className="coin-action">
+const Action = ({ icon, label, href }) => (
+  <Link to={href} className="coin-action">
     {icon}
     <span>{label}</span>
-  </div>
+  </Link>
 );
 
 const FooterItem = ({ icon, label, href }) => (

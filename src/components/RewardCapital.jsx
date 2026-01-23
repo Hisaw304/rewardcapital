@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export default function RewardCapital() {
   return (
     <section className="reward-capital relative overflow-hidden px-6 py-16 md:py-24">
@@ -18,33 +18,46 @@ export default function RewardCapital() {
         </p>
 
         {/* Key points */}
-        <div className="mt-10 flex flex-col md:flex-row justify-center gap-6 text-left animate-fadeIn delay-500">
-          <div className="bg-[var(--background-b)] border border-white/70 rounded-xl p-6 flex-1">
-            <h3 className="font-semibold text-[var(--white80)] mb-2">
-              Deposit & Earn
-            </h3>
-            <p className="text-[var(--white70)] text-sm">
-              Start earning rewards immediately by depositing into Reward
-              Capital. Your investment grows with exclusive benefits.
-            </p>
-          </div>
-          <div className="bg-[var(--background-b)] border border-white/70 rounded-xl p-6 flex-1">
-            <h3 className="font-semibold text-[var(--white80)] mb-2">
-              Exclusive Rewards
-            </h3>
-            <p className="text-[var(--white70)] text-sm">
-              Compete for prizes, access seed funding, and unlock special
-              investment opportunities, all valued at over $5 Million.
-            </p>
-          </div>
-          <div className="bg-[var(--background-b)] border border-white/70 rounded-xl p-6 flex-1">
-            <h3 className="font-semibold text-[var(--white80)] mb-2">
-              Verified & Secure
-            </h3>
-            <p className="text-[var(--white70)] text-sm">
-              All deposits are secured and verified on the blockchain, ensuring
-              your investments are safe and transparent.
-            </p>
+        <div className="mt-10 flex flex-col lg:flex-row justify-center gap-6 text-left animate-fadeIn delay-500">
+          {/* Left: Lottie animation */}
+          <DotLottieReact
+            src="https://lottie.host/e0bfb63e-596d-413b-b791-e8212232fb16/htDt8rUIqU.lottie"
+            loop
+            autoplay
+            className="flex-1"
+          />
+
+          {/* Right: Cards stacked */}
+          <div className="flex-1 flex flex-col gap-6">
+            <div className="bg-[var(--background-b)] border border-white/70 rounded-xl p-6">
+              <h3 className="font-semibold text-[var(--white80)] mb-2">
+                Deposit & Earn
+              </h3>
+              <p className="text-[var(--white70)] text-sm">
+                Start earning rewards immediately by depositing into Reward
+                Capital. Your investment grows with exclusive benefits.
+              </p>
+            </div>
+
+            <div className="bg-[var(--background-b)] border border-white/70 rounded-xl p-6">
+              <h3 className="font-semibold text-[var(--white80)] mb-2">
+                Exclusive Rewards
+              </h3>
+              <p className="text-[var(--white70)] text-sm">
+                Compete for prizes, access seed funding, and unlock special
+                investment opportunities, all valued at over $5 Million.
+              </p>
+            </div>
+
+            <div className="bg-[var(--background-b)] border border-white/70 rounded-xl p-6">
+              <h3 className="font-semibold text-[var(--white80)] mb-2">
+                Verified & Secure
+              </h3>
+              <p className="text-[var(--white70)] text-sm">
+                All deposits are secured and verified on the blockchain,
+                ensuring your investments are safe and transparent.
+              </p>
+            </div>
           </div>
         </div>
 

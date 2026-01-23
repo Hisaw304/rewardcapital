@@ -38,7 +38,7 @@ export const wallets = [
     },
   },
   {
-    public_id: "RC-LL7ABL",
+    public_id: "RC-BB2R2W",
     total_balance: 10581.176,
     in: 10581.176,
     out: 0,

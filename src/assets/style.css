@@ -4257,36 +4257,63 @@ body {
   }
 }
 /* ================= REWARD CAPITAL ANIMATIONS ================= */
-@keyframes slideDown {
+/* Subtle drift animation for blobs */
+@keyframes drift {
   0% {
-    opacity: 0;
-    transform: translateY(-30px);
+    transform: translate(0, 0) scale(1);
+    opacity: 0.1;
+  }
+  25% {
+    transform: translate(5px, 10px) scale(1.03);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translate(-5px, 5px) scale(1.05);
+    opacity: 0.13;
+  }
+  75% {
+    transform: translate(10px, -5px) scale(1.02);
+    opacity: 0.12;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translate(0, 0) scale(1);
+    opacity: 0.1;
   }
+}
+
+.animate-drift {
+  animation: drift 20s ease-in-out infinite;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: scale(0.95);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 
-@keyframes pulseSlow {
-  0%,
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Optional fade-in on page load for blobs */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
   100% {
+    opacity: 1;
     transform: scale(1);
-    opacity: 0.15;
   }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.25;
-  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .animate-slideDown {

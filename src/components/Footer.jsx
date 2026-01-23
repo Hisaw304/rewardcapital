@@ -97,7 +97,7 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-[var(--white70)]">
             <li>
               <a
-                href="/whitepaper.pdf"
+                href="/"
                 target="_blank"
                 className="hover:text-white hover:underline decoration-[#ff8d3a]"
               >
@@ -106,7 +106,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/rewardcapital"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white hover:underline decoration-[#ff8d3a]"
@@ -116,7 +116,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/roadmap"
+                to="#roadmap"
                 className="hover:text-white hover:underline decoration-[#ff8d3a]"
               >
                 Roadmap
@@ -124,7 +124,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/docs"
+                to="/"
                 className="hover:text-white hover:underline decoration-[#ff8d3a]"
               >
                 Documentation
@@ -165,12 +165,12 @@ const Footer = () => {
             <li className="flex items-center gap-2">
               <FaGlobe />
               <a
-                href="https://rewardcapital.com"
+                href="https://rewardcap.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white"
               >
-                rewardcapital.com
+                rewardcap.org
               </a>
             </li>
 

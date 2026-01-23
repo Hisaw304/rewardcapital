@@ -45,7 +45,7 @@ const roadmapData = [
 
 const Roadmap = () => {
   return (
-    <section className="roadmap-section">
+    <section className="roadmap-section" id="roadmap">
       <div className="max-w-7xl mx-auto px-6">
         <header className="roadmap-header">
           <span className="roadmap-eyebrow">ROADMAP</span>

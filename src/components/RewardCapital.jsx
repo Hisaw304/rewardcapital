@@ -24,7 +24,7 @@ export default function RewardCapital() {
             src="https://lottie.host/e0bfb63e-596d-413b-b791-e8212232fb16/htDt8rUIqU.lottie"
             loop
             autoplay
-            className="flex-1"
+            className="w-full h-100 sm:h-100 md:h-auto lg:flex-1"
           />
 
           {/* Right: Cards stacked */}

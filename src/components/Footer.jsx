@@ -177,7 +177,7 @@ const Footer = () => {
             <li className="flex items-center gap-2">
               <FaGithub />
               <a
-                href="https://github.com/rewardcapital"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white"

@@ -62,21 +62,19 @@ export default function ActivityPopup() {
   const [hide, setHide] = useState(false);
   useEffect(() => {
     let interval;
-    const firstDelay = 8000; // 8 seconds delay before first popup
-    const rotation = 7000; // 7 seconds between messages (natural)
+    const firstDelay = 8000;
+    const rotation = 7000;
 
-    // Show first message after delay
     const timeout = setTimeout(() => {
       setActivity(generateMessage());
 
-      // Start repeating rotation
       interval = setInterval(() => {
-        setHide(true); // trigger hide animation
+        setHide(true);
 
         setTimeout(() => {
           setActivity(generateMessage());
-          setHide(false); // show next toast
-        }, 600); // match hide animation duration
+          setHide(false);
+        }, 600);
       }, rotation);
     }, firstDelay);
 

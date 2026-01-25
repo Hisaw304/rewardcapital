@@ -21,6 +21,8 @@ import KYC from "./pages/KYC";
 import Send from "./pages/Send";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
+import Settings from "./pages/Setting";
+import Terms from "./pages/Terms";
 
 const App = () => {
   return (
@@ -31,6 +33,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/settings" element={<Settings />} />
 
         {/* PROTECTED AUTH PAGES */}
         <Route element={<ProtectedRoute />}>
@@ -51,6 +54,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/terms" element={<Terms />} />
       </Route>
     </Routes>
   );

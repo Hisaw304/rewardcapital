@@ -42,7 +42,7 @@ const CryptoTicker = () => {
     };
 
     fetchPrices();
-    const interval = setInterval(fetchPrices, 60000); // refresh every 1 min
+    const interval = setInterval(fetchPrices, 60000);
     return () => clearInterval(interval);
   }, []);
 

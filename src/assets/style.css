@@ -4413,7 +4413,7 @@ select {
 .kyc.not_started {
   color: #ef4444;
 }
-.logout-btn {
+.logout-btn-s {
   display: flex;
   align-items: center;
   justify-content: center;

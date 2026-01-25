@@ -161,7 +161,7 @@ export default function Settings() {
       </div>
 
       {/* LOGOUT */}
-      <button className="logout-btn" onClick={logout}>
+      <button className="logout-btn-s" onClick={logout}>
         <FiLogOut /> Logout
       </button>
     </section>

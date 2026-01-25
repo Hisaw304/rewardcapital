@@ -17,7 +17,6 @@ export default function Settings() {
         data: { user },
         // error: sessionError,
       } = await supabase.auth.getUser();
-      // console.log("Current user:", user, sessionError);
 
       if (!user) return;
 
@@ -31,8 +30,6 @@ export default function Settings() {
         console.error("Profile fetch error:", error);
         return;
       }
-
-      // console.log("Profile data fetched:", profileData);
 
       setProfile({
         email: user.email,

@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       {/* ===== TOP BANNER ===== */}
       <div
-        className="text-white text-center text-sm md:text-base py-2 px-4"
+        className="text-white sticky top-[44px] text-center text-sm md:text-base py-2 px-4 z-50"
         style={{
           background:
             "linear-gradient(92.15deg, var(--primary-1) 2.09%, var(--primary-2) 86.55%)",
@@ -30,9 +30,8 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* ===== NAVBAR ===== */}
       <nav
-        className="w-full px-6 py-4 flex items-center justify-between relative"
+        className="w-full sticky top-[44px] px-6 py-4 flex items-center justify-between z-40"
         style={{ backgroundColor: "var(--background-b)" }}
       >
         {/* MOBILE MENU BUTTON */}

@@ -125,7 +125,38 @@ const Signup = () => {
 
                 <select name="country" required onChange={handleChange}>
                   <option value="">Select Country</option>
-                  {/* your country options here */}
+                  {/* North America */}{" "}
+                  <option value="US">United States</option>{" "}
+                  <option value="CA">Canada</option>{" "}
+                  <option value="MX">Mexico</option> {/* Europe */}{" "}
+                  <option value="UK">United Kingdom</option>{" "}
+                  <option value="IE">Ireland</option>{" "}
+                  <option value="FR">France</option>{" "}
+                  <option value="DE">Germany</option>{" "}
+                  <option value="ES">Spain</option>{" "}
+                  <option value="IT">Italy</option>{" "}
+                  <option value="NL">Netherlands</option>{" "}
+                  <option value="SE">Sweden</option>{" "}
+                  <option value="CH">Switzerland</option> {/* Africa */}{" "}
+                  <option value="KE">Kenya</option>{" "}
+                  <option value="ZA">South Africa</option>{" "}
+                  <option value="EG">Egypt</option> {/* Asia */}{" "}
+                  <option value="IN">India</option>{" "}
+                  <option value="CN">China</option>{" "}
+                  <option value="JP">Japan</option>{" "}
+                  <option value="KR">South Korea</option>{" "}
+                  <option value="SG">Singapore</option>{" "}
+                  <option value="MY">Malaysia</option>{" "}
+                  <option value="PH">Philippines</option>{" "}
+                  <option value="ID">Indonesia</option>{" "}
+                  <option value="AE">United Arab Emirates</option>{" "}
+                  <option value="SA">Saudi Arabia</option> {/* Oceania */}{" "}
+                  <option value="AU">Australia</option>{" "}
+                  <option value="NZ">New Zealand</option> {/* South America */}{" "}
+                  <option value="BR">Brazil</option>{" "}
+                  <option value="AR">Argentina</option>{" "}
+                  <option value="CL">Chile</option>{" "}
+                  <option value="CO">Colombia</option>
                 </select>
 
                 {/* NEW ACCOUNT TYPE DROPDOWN */}

@@ -12,6 +12,7 @@ import Roadmap from "../components/Roadmap";
 import ActivityPopup from "../components/ActivityPopup";
 import RewardCapital from "../components/RewardCapital";
 import AccountTypes from "../components/AccountTypes";
+import WhyRewardCapital from "../components/WhyRewardCapital";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Features />
       <RewardCapital />
       <AccountTypes />
+      <WhyRewardCapital />
       <Ecosystem />
       <HowToStart />
       <Markets />

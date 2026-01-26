@@ -4681,3 +4681,101 @@ select {
   transform: translateY(-3px);
   box-shadow: 0 14px 36px rgba(255, 141, 58, 0.4);
 }
+/* ================= WHY REWARD CAPITAL ================= */
+
+.why-rc {
+  padding: 96px 0;
+  background: var(--background-b);
+}
+
+.rc-header {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 700;
+}
+
+/* ===== STATS ===== */
+.rc-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.stat-card {
+  background: var(--background);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-1);
+}
+
+.stat-card span {
+  margin-top: 6px;
+  display: block;
+  font-size: 0.95rem;
+  color: var(--white70);
+}
+
+/* ===== FEATURES ===== */
+.rc-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.rc-feature {
+  background: var(--background);
+  border-radius: 20px;
+  padding: 36px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.rc-feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.rc-feature svg {
+  color: var(--primary-2);
+  margin-bottom: 14px;
+}
+
+.rc-feature h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white80);
+  margin-bottom: 10px;
+}
+
+.rc-feature p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--white70);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .why-rc {
+    padding: 72px 0;
+  }
+
+  .rc-stats {
+    margin-bottom: 56px;
+  }
+}

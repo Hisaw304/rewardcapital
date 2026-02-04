@@ -75,7 +75,6 @@ const Dashboard = () => {
 
         if (!user) return setLoading(false);
 
-        // Fetch user's welcome_shown from DB
         const { data: profile, error } = await supabase
           .from("profiles")
           .select("welcome_shown")
@@ -92,11 +91,8 @@ const Dashboard = () => {
         const localSeen = localStorage.getItem(localSeenKey) === "true";
         const dbSeen = profile?.welcome_shown === true;
 
-        // Show modal only if neither DB nor localStorage says it was shown
         if (!dbSeen && !localSeen) {
           setShowWelcome(true);
-
-          // Immediately mark in localStorage to prevent flashing
           localStorage.setItem(localSeenKey, "true");
 
           // Update DB in background
